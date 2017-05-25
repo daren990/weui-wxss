@@ -27,6 +27,11 @@ Page({
       }
     });
   },
+  pay:function(){
+    wx.navigateTo({
+      url: '../pay/pay'
+    })
+  },
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,

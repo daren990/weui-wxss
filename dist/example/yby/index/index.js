@@ -29,7 +29,11 @@ Page({
       }
     })
   },
-
+  imgClick: function () {
+    wx.navigateTo({
+      url: '../detail/detail'
+    })
+  },
   onImageLoad: function (e) {
     let imageId = e.currentTarget.id;
     let oImgW = e.detail.width;         //图片原始宽度
@@ -50,6 +54,7 @@ Page({
     }
 
     imageObj.height = imgHeight;
+ 
 
     let loadingCount = this.data.loadingCount - 1;
     let col1 = this.data.col1;
