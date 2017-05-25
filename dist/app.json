@@ -1,5 +1,7 @@
 {
   "pages": [
+   
+
     "example/yby/index/index",
     "example/yby/detail/detail",
     "example/yby/register/register",
